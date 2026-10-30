@@ -148,6 +148,97 @@ The VM was booted to the desktop screen
 ![](06_kali_desktop.png)
 
 A shared folder was also configured for transferring required files between the host operating system and the Kali VM.
+---
+
+## Step 5. Configure the Kali Linux Network
+
+The Kali Linux network configuration was checked and configured with a consistent IPv4 address.
+
+Example configuration:
+
+```text
+IP Address: 10.0.0.2
+Subnet Mask: 255.255.255.0
+Gateway: 10.0.0.1
+DNS: 8.8.8.8
+```
+
+A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
+
+![](08_kali_OS_network_settings.png)
+
+The network configuration was confirmed via the Terminal.
+![](09_kali_network_test_1.png)
+Network connectivity proved dysfunctional after ping test and browser test, so I applied the configuration to ignore duplicate addresses.
+
+![](10_network_disfunction.png)
+![](11_successful_browser_test.png)
+
+## Step 7. Configure 'Drag-and-Drop' and 'Shared Clipboard' Features
+
+In order to enable the transfer of files between the host machine and the virtual machine, as well as enabling a shared clipboard for easy copying and pasting across machines, the features need to be enabled in the VirtuaBox KaliVM settings, and VBox Guest Additions should be installed.
+
+I enabled the 'Drag-and-Drop' and 'Shared Clipboard' features from the VirtualBox settings.
+![](12_drag-and-drop_shared-clipboard.png)
+![](13_kali_snapshot_config.png)
+
+
+# What I Learned
+
+Through this project, I learned how to create and configure a virtual environment for cybersecurity practice.
+
+The most important concepts I learned include:
+
+### 1. NAT vs NAT Network
+
+A standard NAT configuration and a NAT Network serve different purposes.
+
+A NAT Network allows multiple VMs connected to the same virtual network to communicate with one another while providing network address translation for external connectivity.
+
+This makes it useful for building a multi-machine virtual cybersecurity laboratory.
+
+### 2. Virtual Machine Networking
+
+I learned how VirtualBox virtual network adapters connect virtual machines to different types of networks and how network configuration affects communication between machines.
+
+### 3. Static IP Configuration
+
+I learned how to configure and verify IPv4 addressing, subnet masks, gateways, and DNS settings in Kali Linux.
+
+### 4. VM Snapshots
+
+A clean snapshot should be created **before performing risky or experimental activities**.
+
+This provides a known-good recovery point for future cybersecurity exercises.
+
+### 5. Duplicate Address Detection Bypass
+
+I learned to bypass duplicate address detection **before performing risky or experimental activities**.
+
+This is useful when trying to establish network uptime for VMs that may have IP clashes with other VMs (which may be turned off at the time).
+
+### 6. Documentation
+
+Documenting commands, configuration, screenshots, problems, and solutions is an important part of a professional cybersecurity project.
+
+---
+
+# Security & Ethical Use
+
+This laboratory is intended strictly for education purposes only.
+
+---
+
+# Tools & Resources
+
+- **7-Zip:** [https://7-zip.org/download.html](https://7-zip.org/download.html)
+- **VirtualBox:** [https://virtualbox.org/wiki/Downloads](https://virtualbox.org/wiki/Downloads)
+- **Kali Linux:** [https://kali.org/get-kali](https://kali.org/get-kali)
+
+---
+
+
+
 
 ![](07_shared_folder_creation.png)
 
