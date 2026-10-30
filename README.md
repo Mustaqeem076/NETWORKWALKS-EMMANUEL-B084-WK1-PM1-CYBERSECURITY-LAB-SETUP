@@ -143,12 +143,15 @@ Attached to: NAT Network
 Network: NatNetwork
 
 ```
-The VM was booted to the desktop screen
+![](05_configure_kali_network_settings.png)
 
+The VM was booted to the desktop screen
 ![](06_kali_desktop.png)
+
 
 A shared folder was also configured for transferring required files between the host operating system and the Kali VM.
 ---
+![](07_shared_folder_creation.png)
 
 ## Step 5. Configure the Kali Linux Network
 
@@ -239,8 +242,4 @@ This laboratory is intended strictly for education purposes only.
 
 ---
 
-
-
-
-![](07_shared_folder_creation.png)
 
