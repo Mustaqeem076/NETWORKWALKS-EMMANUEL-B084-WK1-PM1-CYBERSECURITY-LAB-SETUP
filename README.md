@@ -174,14 +174,16 @@ Network connectivity proved dysfunctional after ping test and browser test, so I
 ![](10_network_disfunction.png)
 ![](11_successful_browser_test.png)
 
-## Step 7. Configure 'Drag-and-Drop' and 'Shared Clipboard' Features
+## Step 6. Configure 'Drag-and-Drop' and 'Shared Clipboard' Features
 
 In order to enable the transfer of files between the host machine and the virtual machine, as well as enabling a shared clipboard for easy copying and pasting across machines, the features need to be enabled in the VirtuaBox KaliVM settings, and VBox Guest Additions should be installed.
 
 I enabled the 'Drag-and-Drop' and 'Shared Clipboard' features from the VirtualBox settings.
 ![](12_drag-and-drop_shared-clipboard.png)
-![](13_kali_snapshot_config.png)
 
+## Create a Clean VM Snapshot
+After completing the initial setup, a clean baseline snapshot was taken in VirtualBox.
+![](13_kali_snapshot_config.png)
 
 # What I Learned
 
